@@ -9,6 +9,8 @@ function FindProxyForURL(url, host){
         return "PROXY proxy.hinet.net:80; DIRECT";
     }else if ( shExpMatch(url, "*/*.baidupcs.*/*") ) {
         return "PROXY proxy.hinet.net:80; DIRECT";
+    }else if ( shExpMatch(url, "*/weibo.com/*") ) {
+        return "PROXY proxy.hinet.net:80; DIRECT";
     }else if ( shExpMatch(url, "*/youku/*") ) {
         return "PROXY proxy.hinet.net:80; DIRECT";
     }else if ( shExpMatch(url, "*fbcdn-video-*.akamaihd.net/*") ) {
